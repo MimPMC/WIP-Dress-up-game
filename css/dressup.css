@@ -1,0 +1,27 @@
+.body {
+    height: 100%;
+    top: 50%;
+    left: 50%;
+}
+
+.skincolorsDiv {
+    height: 3rem;
+    width: 20rem;
+    top:20%;
+    left: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.skin-color {
+    height: 3rem;
+}
+
+/*
+.skin-color-1 { left:10%;}
+.skin-color-2 { left:14%;}
+.skin-color-3 { left:18%;}
+.skin-color-4 { left:22%;}
+.skin-color-5 { left:26%;}
+*/

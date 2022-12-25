@@ -6,7 +6,6 @@
 
 }
 
-
 main {
     background-color: rgb(59, 59, 59);
     width: 100%;
@@ -17,10 +16,25 @@ main {
 }
 
 .game-container {
-    height: 720px;
-    width: 1080px;
-    background-color: rgb(247, 247, 247);
+    height: 100%;
+    width: 100%;
+    background-image: url("../images/dressup.jpg");
+    background-size: cover;
+    background-position: center;
+    transition: 300ms;
     position: relative;
+}
+
+@media (max-width:1024px)  { 
+    .skin-color {
+        top: 20%;
+        height: 2rem;
+    }
+    .skincolorsDiv {
+        width: auto;
+        left: 14%;
+    }
+    
 }
 
 .game-title {
@@ -63,13 +77,11 @@ main {
 }
 
 .bgpic {
+    
     width: 100%;
     height: auto;
     opacity: .9;
 }
-
-
-
 
 ul {list-style: none;}
 .abs { 
