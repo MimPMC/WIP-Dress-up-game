@@ -1,0 +1,33 @@
+*, *::after, *:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;;
+
+}
+
+
+main {
+    background-color: rgb(59, 59, 59);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-container {
+    height: 720px;
+    width: 1080px;
+    background-color: rgb(247, 247, 247);
+    position: relative;
+}
+
+.game-title {
+    position: absolute;
+    left: 35%;
+    top: 10%;
+}
+
+
+
