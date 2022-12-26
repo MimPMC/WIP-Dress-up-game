@@ -4,24 +4,99 @@
     left: 50%;
 }
 
-.skincolorsDiv {
-    height: 3rem;
-    width: 20rem;
-    top:20%;
-    left: 20%;
+.elementContainerLeft {
+    background-color: pink;
+    position: absolute;
+    left:1%;
+    top:1%;
+    height: 98%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 30%;
+
+}
+
+.TypeHeadline {
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: rgb(138, 13, 51);
+    font-family: 'Pacifico', cursive;
+    background-color: blanchedalmond;
+}
+
+.skincolorsWrap {
+    background-color: rgb(196, 108, 108);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+ .skincolorsDiv {
+    z-index: 0;
+    background-color: blue;
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
 .skin-color {
-    height: 3rem;
+    background-color: rgb(255, 0, 0);
+    border-radius: 50%;
+    max-height: 3rem;
+    max-width: 3rem;
+    height: 100%;
+    cursor: pointer;
 }
 
-/*
-.skin-color-1 { left:10%;}
-.skin-color-2 { left:14%;}
-.skin-color-3 { left:18%;}
-.skin-color-4 { left:22%;}
-.skin-color-5 { left:26%;}
-*/
+.eyes-sort {
+    background-color: white;
+    z-index: 10;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.mini-pic {
+    width: 3rem;
+    cursor: pointer;
+}
+
+.test {
+    z-index: 100;
+    top: 50%;
+    left: 70%;
+}
+
+
+@media (max-width:1200px)  { 
+    .skin-color {
+        height: 2rem;
+    }
+    .skincolorsDiv {   
+        left: 14%;
+    }
+    .skinToneText {
+        left:14%;
+    }
+    .TypeHeadline {
+        font-size: 1.4rem;
+    }
+    .eyes-sort {
+        z-index: 10;
+        width: 2rem;
+        height: 2rem;
+    }
+    .mini-pic {
+        width: 2rem;
+    }
+    
+}
