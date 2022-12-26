@@ -31,9 +31,8 @@ function loadDressupScene(gameContainer) {
     body.src = "./images/skincolors/base1.png";
     gameContainer.appendChild(body);
     
-    createSkincolorButtons();
-    
-    function createSkincolorButtons() {
+    createSkinColorButtonsAndMakeThemChangeSkinTone();
+    function createSkinColorButtonsAndMakeThemChangeSkinTone() {
       const skincolorsDiv = document.createElement("div");
       skincolorsDiv.className = "skincolorsDiv abs";
       gameContainer.appendChild(skincolorsDiv);
@@ -66,11 +65,27 @@ function loadDressupScene(gameContainer) {
       skincolorsDiv.append(skinColor1, skinColor2, skinColor3, skinColor4, skinColor5);
 
       function setSkinTone(clickedElement) {
+        if (clickedElement === skinColor1) {
+            body.src = "./images/skincolors/base1.png";
+          }
         if (clickedElement === skinColor2) {
           body.src = "./images/skincolors/base2.png";
         }
+        if (clickedElement === skinColor3) {
+            body.src = "./images/skincolors/base3.png";
+          }
+        if (clickedElement === skinColor4) {
+            body.src = "./images/skincolors/base4.png";
+
+        }
+        if (clickedElement === skinColor5) {
+            body.src = "./images/skincolors/base5.png";
+        }
       }
     }
+
+
+    
 
 
 
