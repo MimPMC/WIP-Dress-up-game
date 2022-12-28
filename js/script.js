@@ -3,7 +3,7 @@ window.addEventListener("DOMContentLoaded", main);
 let gameContainer = document.querySelector(".game-container");
 
 function main() {
-  loadDressupScene();
+  loadMainMenu();
 }
 
 function loadMainMenu() {
