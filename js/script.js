@@ -3,7 +3,7 @@ window.addEventListener("DOMContentLoaded", main);
 let gameContainer = document.querySelector(".game-container");
 
 function main() {
-  loadMainMenu();
+  loadDressupScene();
 }
 
 function loadMainMenu() {
@@ -140,7 +140,55 @@ function changeEyeStyle(elementContainerLeft, eyes) {
     console.log(eyestyle)
   });
 
+  createEyeColorIcons()
+
+  function createEyeColorIcons() {
+    const eyeColorWrap = document.createElement("div");
+    eyeColorWrap.className = "skincolorsWrap";
+    elementContainerLeft.appendChild(eyeColorWrap);
+
+    const eyeColorText = document.createElement("h1");
+    eyeColorText.textContent = "Eyecolor";
+    eyeColorText.className = "TypeHeadline skinToneText";
+    eyeColorWrap.appendChild(eyeColorText);
+
+    const eyeColorDiv = document.createElement("div");
+    eyeColorDiv.className = "skincolorsDiv ";
+    eyeColorWrap.appendChild(eyeColorDiv);
+
+    const blueEyes = document.createElement("div");
+    blueEyes.className = "eyes-sort";
+    blueEyes.addEventListener("click", () => eyecolor = setEyeColor(this));
+  
+    const greenEyes = document.createElement("div");
+    greenEyes.className = "eyes-sort";
+    greenEyes.addEventListener("click", () => eyecolor = setEyeColor(this));
+  
+    const brownEyes = document.createElement("div");
+    brownEyes.className = "eyes-sort";
+    brownEyes.addEventListener("click", () => eyecolor = setEyeColor(this));
+   
+
+    eyeColorDiv.append(blueEyes, greenEyes, brownEyes);
+
+  }
+
+  function setEyeColor(clickedElement) {
+    console.log("hej")
+    if (clickedElement === blueEyes) {
+      eyes.src = `./images/eyes/eyes${eyestyle}_6.png`;
+    }
+    else if (clickedElement === greenEyes) {
+      eyes.src = `./images/eyes/eyes${eyestyle}_7.png`;
+    }
+    else if (clickedElement === brownEyes) {
+      eyes.src = `./images/eyes/eyes${eyestyle}_8.png`;
+    }
+  }
+
 }
+
+
 
 function changeSkinTone(elementContainerLeft,body) {
   const skincolorsWrap = document.createElement("div");
