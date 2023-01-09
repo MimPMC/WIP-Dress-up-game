@@ -4,7 +4,7 @@ let gameContainer = document.querySelector(".game-container");
 
 
 function main() {
-  loadDressupScene();
+  loadMainMenu();
 }
 
 function loadMainMenu() {
