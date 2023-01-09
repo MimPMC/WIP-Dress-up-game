@@ -53,22 +53,22 @@ function renderCharacter(elementContainerLeft) {
 
   const eyes = document.createElement("img");
   eyes.classList = "body abs";
-  eyes.src = "./images/eyes/eyes1_1.png";
+  eyes.src = "./images/Eyes/eyes1_1.png";
   gameContainer.appendChild(eyes);
 
   const eyebrows = document.createElement("img");
   eyebrows.classList = "body abs";
-  eyebrows.src = "./images/eyebrows/eyebrows1_1.png";
+  eyebrows.src = "./images/Eyebrows/eyebrows1_1.png";
   gameContainer.appendChild(eyebrows);
 
   const mouth = document.createElement("img");
   mouth.classList = "body abs";
-  mouth.src = "./images/mouth/mouth1_1.png";
+  mouth.src = "./images/Mouth/mouth1_1.png";
   gameContainer.appendChild(mouth);
 
   const hair = document.createElement("img");
   hair.classList = "body abs";
-  hair.src = "./images/hair/hair1_1.png";
+  hair.src = "./images/Hair/hair1_1.png";
   gameContainer.appendChild(hair);
 
   changeSkinTone(elementContainerLeft,body);
