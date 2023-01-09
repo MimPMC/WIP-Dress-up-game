@@ -1,5 +1,4 @@
 function changeSkinTone(elementContainerLeft,hair) {
-
     const hairWrap = document.createElement("div");
     hairWrap.className = "skincolorsWrap";
     elementContainerLeft.appendChild(hairWrap);
@@ -9,7 +8,7 @@ function changeSkinTone(elementContainerLeft,hair) {
     skincolorsWrap.appendChild(skincolorsDiv);
   
     const skinToneText = document.createElement("h1");
-    skinToneText.textContent = "Skintone";
+    skinToneText.textContent = "Top";
     skinToneText.className = "TypeHeadline skinToneText";
     skincolorsWrap.appendChild(skinToneText);
   

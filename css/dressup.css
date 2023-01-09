@@ -11,6 +11,7 @@
     top:1%;
     height: 98%;
     display: flex;
+    gap: 1rem;
     flex-direction: column;
     justify-content: flex-start;
     width: 30%;
@@ -23,11 +24,11 @@
     text-transform: uppercase;
     color: rgb(138, 13, 51);
     font-family: 'Pacifico', cursive;
-    background-color: blanchedalmond;
+    
 }
 
 .skincolorsWrap {
-    background-color: rgb(196, 108, 108);
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,7 +38,7 @@
 
  .skincolorsDiv {
     z-index: 0;
-    background-color: blue;
+    
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -82,6 +83,26 @@
     left: 70%;
 }
 
+#lip-1 {
+    background-color: #e27a84;
+}
+#lip-3 {
+    background-color: #af5149;
+}
+#lip-2 {
+    background-color: #ca635d;
+}
+#lip-5 {
+    background-color: #2b3894;
+}
+#lip-6 {
+    background-color: #292929;
+}
+#lip-4 {
+    background-color: #6e191d;
+}
+
+
 
 @media (max-width:1200px)  { 
     .skin-color {
@@ -94,7 +115,7 @@
         left:14%;
     }
     .TypeHeadline {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
     .eyes-sort {
         z-index: 10;
@@ -103,6 +124,9 @@
     }
     .mini-pic {
         width: 2rem;
+    }
+    .elementContainerLeft {
+        gap: .2rem;
     }
     
 }

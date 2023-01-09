@@ -74,6 +74,9 @@ function renderCharacter(elementContainerLeft) {
   changeSkinTone(elementContainerLeft,body);
   changeEyeStyle(elementContainerLeft, eyes);
   changeHairStyle(elementContainerLeft, hair);
+  changeTop(elementContainerLeft, top);
+  changeBottom(elementContainerLeft, bottom);
+  changeLips(elementContainerLeft,mouth)
 }
 
 let eyestyle = changeEyeStyle;
@@ -316,6 +319,212 @@ function changeHairStyle(elementContainerLeft,hair) {
     }
     if (clickedElement === hair5) {
       hair.src = "./images/Hair/hair5_1.png";
+    }
+  }
+}
+
+function changeTop(elementContainerLeft,top) {
+
+  const hairWrap = document.createElement("div");
+  hairWrap.className = "skincolorsWrap";
+  elementContainerLeft.appendChild(hairWrap);
+
+  const topText = document.createElement("h1");
+  topText.textContent = "Top"
+  topText.className = "TypeHeadline skinToneText";
+  hairWrap.appendChild(topText);
+  
+  const skincolorsDiv = document.createElement("div");
+  skincolorsDiv.className = "skincolorsDiv";
+  hairWrap.appendChild(skincolorsDiv);
+
+  const hair1 = document.createElement("div");
+  hair1.className = "eyes-sort";
+  hair1.textContent = "1"
+  hair1.addEventListener("click", () => setHairStyle(hair1));
+
+  const hair2 = document.createElement("div");
+  hair2.className = "eyes-sort";
+  hair2.textContent = "2"
+  hair2.addEventListener("click", () => setHairStyle(hair2));
+
+  const hair3 = document.createElement("div");
+  hair3.className = "eyes-sort";
+  hair3.textContent = "3"
+  hair3.addEventListener("click", () => setHairStyle(hair3));
+
+  const hair4 = document.createElement("div");
+  hair4.className = "eyes-sort";
+  hair4.textContent = "4"
+  hair4.addEventListener("click", () => setHairStyle(hair4));
+
+  const hair5 = document.createElement("div");
+  hair5.className = "eyes-sort";
+  hair5.textContent = "5"
+  hair5.addEventListener("click", () => setHairStyle(hair5));
+
+  skincolorsDiv.append(
+    hair1,
+    hair2,
+    hair3,
+    hair4,
+    hair5
+  );
+  function setHairStyle(clickedElement) {
+    if (clickedElement === hair1) {
+      top.src = "./images/Tops/top1_1.png";
+    }
+    if (clickedElement === hair2) {
+      top.src = "./images/Tops/top2_1.png";
+    }
+    if (clickedElement === hair3) {
+      top.src = "./images/Tops/top3_1.png";
+    }
+    if (clickedElement === hair4) {
+      top.src = "./images/Tops/top4_1.png";
+    }
+    if (clickedElement === hair5) {
+      top.src = "./images/Tops/top5_1.png";
+    }
+  }
+}
+
+function changeBottom(elementContainerLeft,bottom) {
+
+  const hairWrap = document.createElement("div");
+  hairWrap.className = "skincolorsWrap";
+  elementContainerLeft.appendChild(hairWrap);
+
+  const topText = document.createElement("h1");
+  topText.textContent = "Bottom"
+  topText.className = "TypeHeadline skinToneText";
+  hairWrap.appendChild(topText);
+  
+  const skincolorsDiv = document.createElement("div");
+  skincolorsDiv.className = "skincolorsDiv";
+  hairWrap.appendChild(skincolorsDiv);
+
+  const hair1 = document.createElement("div");
+  hair1.className = "eyes-sort";
+  hair1.textContent = "1"
+  hair1.addEventListener("click", () => setHairStyle(hair1));
+
+  const hair2 = document.createElement("div");
+  hair2.className = "eyes-sort";
+  hair2.textContent = "2"
+  hair2.addEventListener("click", () => setHairStyle(hair2));
+
+  const hair3 = document.createElement("div");
+  hair3.className = "eyes-sort";
+  hair3.textContent = "3"
+  hair3.addEventListener("click", () => setHairStyle(hair3));
+
+  const hair4 = document.createElement("div");
+  hair4.className = "eyes-sort";
+  hair4.textContent = "4"
+  hair4.addEventListener("click", () => setHairStyle(hair4));
+
+  const hair5 = document.createElement("div");
+  hair5.className = "eyes-sort";
+  hair5.textContent = "5"
+  hair5.addEventListener("click", () => setHairStyle(hair5));
+
+  skincolorsDiv.append(
+    hair1,
+    hair2,
+    hair3,
+    hair4,
+    hair5
+  );
+  function setHairStyle(clickedElement) {
+    if (clickedElement === hair1) {
+      bottom.src = "./images/Bottoms/bottom1_1.png";
+    }
+    if (clickedElement === hair2) {
+      bottom.src = "./images/Bottoms/bottom2_1.png";
+    }
+    if (clickedElement === hair3) {
+      bottom.src = "./images/Bottoms/bottom3_1.png";
+    }
+    if (clickedElement === hair4) {
+      bottom.src = "./images/Bottoms/bottom1_2.png";
+    }
+    if (clickedElement === hair5) {
+      bottom.src = "./images/Bottoms/bottom3_2.png";
+    }
+  }
+}
+function changeLips(elementContainerLeft,mouth) {
+
+  const hairWrap = document.createElement("div");
+  hairWrap.className = "skincolorsWrap";
+  elementContainerLeft.appendChild(hairWrap);
+
+  const topText = document.createElement("h1");
+  topText.textContent = "Lipstick"
+  topText.className = "TypeHeadline skinToneText";
+  hairWrap.appendChild(topText);
+  
+  const skincolorsDiv = document.createElement("div");
+  skincolorsDiv.className = "skincolorsDiv";
+  hairWrap.appendChild(skincolorsDiv);
+
+  const hair1 = document.createElement("div");
+  hair1.className = "eyes-sort";
+  hair1.id = "lip-1"
+  hair1.addEventListener("click", () => setHairStyle(hair1));
+
+  const hair2 = document.createElement("div");
+  hair2.className = "eyes-sort";
+  hair2.id = "lip-2"
+  hair2.addEventListener("click", () => setHairStyle(hair2));
+
+  const hair3 = document.createElement("div");
+  hair3.className = "eyes-sort";
+  hair3.id = "lip-3"
+  hair3.addEventListener("click", () => setHairStyle(hair3));
+
+  const hair4 = document.createElement("div");
+  hair4.className = "eyes-sort";
+  hair4.id = "lip-4"
+  hair4.addEventListener("click", () => setHairStyle(hair4));
+
+  const hair5 = document.createElement("div");
+  hair5.className = "eyes-sort";
+  hair5.id = "lip-5"
+  hair5.addEventListener("click", () => setHairStyle(hair5));
+
+  const hair6 = document.createElement("div");
+  hair6.className = "eyes-sort";
+  hair6.id = "lip-6"
+  hair6.addEventListener("click", () => setHairStyle(hair6));
+
+  skincolorsDiv.append(
+    hair1,
+    hair2,
+    hair3,
+    hair4,
+    hair5,
+    hair6
+  );
+  function setHairStyle(clickedElement) {
+    if (clickedElement === hair1) {
+      mouth.src = "./images/Mouth/mouth1_1.png";
+    }
+    if (clickedElement === hair2) {
+      mouth.src = "./images/Mouth/mouth3_1.png";
+    }
+    if (clickedElement === hair3) {
+      mouth.src = "./images/Mouth/mouth4_1.png";
+    }
+    if (clickedElement === hair4) {
+      mouth.src = "./images/Mouth/mouth5_1.png";
+    }
+    if (clickedElement === hair5) {
+      mouth.src = "./images/Mouth/mouth6_1.png";
+    }
+    if (clickedElement === hair6) {
+      mouth.src = "./images/Mouth/mouth7_1.png";
     }
   }
 }
