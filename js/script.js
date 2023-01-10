@@ -128,13 +128,13 @@ function changeEyeStyle(elementContainerLeft, eyes) {
   function setEyeNumber(clickedElement) {
     switch (clickedElement) {
       case eyes1:
-        eyes.src = "./images/eyes/eyes1_1.png";
+        eyes.src = "./images/Eyes/eyes1_1.png";
         return 1;
       case eyes2:
-        eyes.src = "./images/eyes/eyes2_1.png";
+        eyes.src = "./images/Eyes/eyes2_1.png";
         return 2;
       case eyes3:
-        eyes.src = "./images/eyes/eyes3_1.png";
+        eyes.src = "./images/Eyes/eyes3_1.png";
         return 3;
     }
   }
