@@ -275,6 +275,9 @@ function changeHairStyle(elementContainerLeft,hair) {
       }  else if (currentHairColor ==="red") {
         hair.src = "./images/Hair/hair1_8.png";
         currentHairStyle = 1;
+      }  else if (currentHairColor ==="orange") {
+        hair.src = "./images/Hair/hair1_10.png";
+        currentHairStyle = 1;
       } 
     }
     if (clickedElement === hair2) {
@@ -295,6 +298,9 @@ function changeHairStyle(elementContainerLeft,hair) {
         currentHairStyle = 2;
       } else if (currentHairColor ==="red") {
         hair.src = "./images/Hair/hair2_8.png";
+        currentHairStyle = 2;
+      } else if (currentHairColor ==="orange") {
+        hair.src = "./images/Hair/hair2_10.png";
         currentHairStyle = 2;
       }   
     }
@@ -317,7 +323,10 @@ function changeHairStyle(elementContainerLeft,hair) {
       }  else if (currentHairColor ==="red") {
         hair.src = "./images/Hair/hair3_8.png";
         currentHairStyle = 3;
-      }
+      }else if (currentHairColor ==="orange") {
+        hair.src = "./images/Hair/hair3_10.png";
+        currentHairStyle = 3;
+      } 
      
     }
     if (clickedElement === hair4) {
@@ -339,8 +348,10 @@ function changeHairStyle(elementContainerLeft,hair) {
       }  else if (currentHairColor ==="red") {
         hair.src = "./images/Hair/hair4_8.png";
         currentHairStyle = 4;
-      }
-      
+      } else if (currentHairColor ==="orange") {
+        hair.src = "./images/Hair/hair4_10.png";
+        currentHairStyle = 4;
+      } 
     }
     if (clickedElement === hair5) {
       if(currentHairColor ==="blonde") {
@@ -360,6 +371,9 @@ function changeHairStyle(elementContainerLeft,hair) {
         currentHairStyle = 5;
       } else if (currentHairColor ==="red") {
         hair.src = "./images/Hair/hair5_8.png";
+        currentHairStyle = 5;
+      } else if (currentHairColor ==="orange") {
+        hair.src = "./images/Hair/hair5_10.png";
         currentHairStyle = 5;
       }
     }
@@ -401,13 +415,18 @@ function changeHairStyle(elementContainerLeft,hair) {
 
   const pinkHair = document.createElement("div");
   pinkHair.className = "haircolor ";
-  pinkHair.style.background = "hotpink"
+  pinkHair.style.background = "#e96884"
   pinkHair.addEventListener("click", () => setHairColor(currentHairStyle, "pink"));
 
   const redHair = document.createElement("div");
   redHair.className = "haircolor ";
   redHair.style.background = "#a30b20"
   redHair.addEventListener("click", () => setHairColor(currentHairStyle, "red"));
+
+  const orangeHair = document.createElement("div");
+  orangeHair.className = "haircolor ";
+  orangeHair.style.background = "#d35e3a"
+  orangeHair.addEventListener("click", () => setHairColor(currentHairStyle, "orange"));
   
 
   hairColorsDiv.append(
@@ -416,6 +435,7 @@ function changeHairStyle(elementContainerLeft,hair) {
     brownHair,
     blackHair,
     pinkHair,
+    orangeHair,
     redHair
   );
 
@@ -441,6 +461,9 @@ function changeHairStyle(elementContainerLeft,hair) {
       } else if (chosenColor === "red") {
         hair.src = "./images/Hair/hair1_8.png";
         currentHairColor = "red"
+      } else if (chosenColor === "orange") {
+        hair.src = "./images/Hair/hair1_10.png";
+        currentHairColor = "orange"
       }
     } else if (hairStyle === 2) {
       if(chosenColor === "blonde") {
@@ -461,6 +484,9 @@ function changeHairStyle(elementContainerLeft,hair) {
       } else if (chosenColor === "red") {
         hair.src = "./images/Hair/hair2_8.png";
         currentHairColor = "red"
+      } else if (chosenColor === "orange") {
+        hair.src = "./images/Hair/hair2_10.png";
+        currentHairColor = "orange"
       }
     } else if (hairStyle === 3) {
       if(chosenColor === "blonde") {
@@ -481,6 +507,9 @@ function changeHairStyle(elementContainerLeft,hair) {
       } else if (chosenColor === "red") {
         hair.src = "./images/Hair/hair3_8.png";
         currentHairColor = "red"
+      } else if (chosenColor === "orange") {
+        hair.src = "./images/Hair/hair3_10.png";
+        currentHairColor = "orange"
       }
     } else if (hairStyle === 4) {
       if(chosenColor === "blonde") {
@@ -501,6 +530,9 @@ function changeHairStyle(elementContainerLeft,hair) {
       } else if (chosenColor === "red") {
         hair.src = "./images/Hair/hair4_8.png";
         currentHairColor = "red"
+      } else if (chosenColor === "orange") {
+        hair.src = "./images/Hair/hair4_10.png";
+        currentHairColor = "orange"
       }
     } else if (hairStyle === 5) {
         if(chosenColor === "blonde") {
@@ -521,6 +553,9 @@ function changeHairStyle(elementContainerLeft,hair) {
         } else if (chosenColor === "red") {
           hair.src = "./images/Hair/hair5_8.png";
           currentHairColor = "red"
+        } else if (chosenColor === "orange") {
+          hair.src = "./images/Hair/hair5_10.png";
+          currentHairColor = "orange"
         }
       }
       
