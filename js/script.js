@@ -6,7 +6,7 @@ let gameContainer = document.querySelector(".game-container");
 
 
 function main() {
-  loadDressupScene();
+  loadMainMenu();
 }
 
 function loadMainMenu() {
@@ -82,6 +82,8 @@ function renderCharacter(elementContainerLeft) {
 }
 
 function changeEyeStyle(elementContainerLeft, eyes) {
+  let currentEyeStyle = 1;
+  let currentHairColor = "brown";
 
   const eyesWrap = document.createElement("div");
   eyesWrap.className = "skincolorsWrap";
@@ -98,7 +100,7 @@ function changeEyeStyle(elementContainerLeft, eyes) {
 
   const eyes1 = document.createElement("div");
   eyes1.className = "eyes-sort";
-  eyes1.addEventListener("click", () => eyestyle = setEyeNumber(eyes1));
+  eyes1.addEventListener("click", () => eyestyle = setEyeNumber(eyes1, ));
   
   const eyes2 = document.createElement("div");
   eyes2.className = "eyes-sort";
@@ -141,6 +143,8 @@ function changeEyeStyle(elementContainerLeft, eyes) {
 }
 
 function changeSkinTone(elementContainerLeft,body) {
+  
+
   const skincolorsWrap = document.createElement("div");
   skincolorsWrap.className = "skincolorsWrap";
   elementContainerLeft.appendChild(skincolorsWrap);
