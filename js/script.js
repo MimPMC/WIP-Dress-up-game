@@ -75,7 +75,7 @@ function renderCharacter(elementContainerLeft) {
 
   changeSkinTone(elementContainerLeft,body);
   changeEyeStyle(elementContainerLeft, eyes);
-  changeHairStyle(elementContainerLeft, hair);
+  changeHairStyle(elementContainerLeft, hair,eyebrows);
   changeTop(elementContainerLeft, top);
   changeBottom(elementContainerLeft, bottom);
   changeLips(elementContainerLeft,mouth)
@@ -255,7 +255,7 @@ function changeHairStyle(elementContainerLeft,hair) {
   );
   let currentHairStyle = 1;
   let currentHairColor = "blonde";
-  function setHairStyle(clickedElement, currentHairColor) {
+  function setHairStyle(clickedElement, currentHairColor, ) {
     if (clickedElement === hair1) {
       if(currentHairColor ==="blonde") {
         hair.src = "./images/Hair/hair1_1.png";
@@ -268,6 +268,9 @@ function changeHairStyle(elementContainerLeft,hair) {
         currentHairStyle = 1;
       }  else if (currentHairColor ==="pink") {
         hair.src = "./images/Hair/hair1_9.png";
+        currentHairStyle = 1;
+      }  else if (currentHairColor ==="yellow") {
+        hair.src = "./images/Hair/hair1_3.png";
         currentHairStyle = 1;
       } 
     }
@@ -284,7 +287,10 @@ function changeHairStyle(elementContainerLeft,hair) {
       }  else if (currentHairColor ==="pink") {
         hair.src = "./images/Hair/hair2_9.png";
         currentHairStyle = 2;
-      }    
+      }  else if (currentHairColor ==="yellow") {
+        hair.src = "./images/Hair/hair2_3.png";
+        currentHairStyle = 2;
+      }   
     }
     if (clickedElement === hair3) {
       if(currentHairColor ==="blonde") {
@@ -298,6 +304,9 @@ function changeHairStyle(elementContainerLeft,hair) {
         currentHairStyle = 3;
       } else if (currentHairColor ==="pink") {
         hair.src = "./images/Hair/hair3_9.png";
+        currentHairStyle = 3;
+      }  else if (currentHairColor ==="yellow") {
+        hair.src = "./images/Hair/hair3_3.png";
         currentHairStyle = 3;
       }  
      
@@ -315,6 +324,9 @@ function changeHairStyle(elementContainerLeft,hair) {
       } else if (currentHairColor ==="pink") {
         hair.src = "./images/Hair/hair4_9.png";
         currentHairStyle = 4;
+      } else if (currentHairColor ==="yellow") {
+        hair.src = "./images/Hair/hair4_3.png";
+        currentHairStyle = 4;
       } 
       
     }
@@ -330,6 +342,9 @@ function changeHairStyle(elementContainerLeft,hair) {
         currentHairStyle = 5;
       } else if (currentHairColor ==="pink") {
         hair.src = "./images/Hair/hair5_9.png";
+        currentHairStyle = 5;
+      } else if (currentHairColor ==="yellow") {
+        hair.src = "./images/Hair/hair5_3.png";
         currentHairStyle = 5;
       } 
     }
@@ -350,30 +365,36 @@ function changeHairStyle(elementContainerLeft,hair) {
   
 
   const blondeHair = document.createElement("div");
-  blondeHair.className = "eyes-sort";
+  blondeHair.className = "haircolor";
   blondeHair.style.background = "lightyellow"
   blondeHair.addEventListener("click", () => setHairColor(currentHairStyle, "blonde"));
 
+  const yellowHair = document.createElement("div");
+  yellowHair.className = "haircolor";
+  yellowHair.style.background = "#bfa867"
+  yellowHair.addEventListener("click", () => setHairColor(currentHairStyle, "yellow"));
+
   const brownHair = document.createElement("div");
-  brownHair.className = "eyes-sort";
-  brownHair.style.background = "brown"
+  brownHair.className = "haircolor";
+  brownHair.style.background = "#5e3e2a"
   brownHair.addEventListener("click", () => setHairColor( currentHairStyle, "brown"));
 
   const blackHair = document.createElement("div");
-  blackHair.className = "eyes-sort ";
+  blackHair.className = "haircolor ";
   blackHair.style.background = "black"
   blackHair.addEventListener("click", () => setHairColor(currentHairStyle, "black"));
 
   const pinkHair = document.createElement("div");
-  pinkHair.className = "eyes-sort ";
+  pinkHair.className = "haircolor ";
   pinkHair.style.background = "hotpink"
   pinkHair.addEventListener("click", () => setHairColor(currentHairStyle, "pink"));
 
   hairColorsDiv.append(
     blondeHair,
+    yellowHair,
     brownHair,
     blackHair,
-    pinkHair
+    pinkHair,
   );
 
 
@@ -392,6 +413,9 @@ function changeHairStyle(elementContainerLeft,hair) {
       } else if (chosenColor === "pink") {
         hair.src = "./images/Hair/hair1_9.png";
         currentHairColor = "pink"
+      } else if (chosenColor === "yellow") {
+        hair.src = "./images/Hair/hair1_3.png";
+        currentHairColor = "yellow"
       }
     } else if (hairStyle === 2) {
       if(chosenColor === "blonde") {
@@ -406,6 +430,9 @@ function changeHairStyle(elementContainerLeft,hair) {
       } else if (chosenColor === "pink") {
         hair.src = "./images/Hair/hair2_9.png";
         currentHairColor = "pink"
+      }else if (chosenColor === "yellow") {
+        hair.src = "./images/Hair/hair2_3.png";
+        currentHairColor = "yellow"
       }
     } else if (hairStyle === 3) {
       if(chosenColor === "blonde") {
@@ -420,6 +447,9 @@ function changeHairStyle(elementContainerLeft,hair) {
       } else if (chosenColor === "pink") {
         hair.src = "./images/Hair/hair3_9.png";
         currentHairColor = "pink"
+      } else if (chosenColor === "yellow") {
+        hair.src = "./images/Hair/hair3_3.png";
+        currentHairColor = "yellow"
       }
     } else if (hairStyle === 4) {
       if(chosenColor === "blonde") {
@@ -434,6 +464,9 @@ function changeHairStyle(elementContainerLeft,hair) {
       } else if (chosenColor === "pink") {
         hair.src = "./images/Hair/hair4_9.png";
         currentHairColor = "pink"
+      } else if (chosenColor === "yellow") {
+        hair.src = "./images/Hair/hair4_3.png";
+        currentHairColor = "yellow"
       }
     } else if (hairStyle === 5) {
         if(chosenColor === "blonde") {
@@ -448,6 +481,9 @@ function changeHairStyle(elementContainerLeft,hair) {
         } else if (chosenColor === "pink") {
           hair.src = "./images/Hair/hair5_9.png";
           currentHairColor = "pink"
+        } else if (chosenColor === "yellow") {
+          hair.src = "./images/Hair/hair5_3.png";
+          currentHairColor = "yellow"
         }
       }
       
