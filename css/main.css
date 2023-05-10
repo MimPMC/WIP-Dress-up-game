@@ -18,7 +18,7 @@ main {
 .game-container {
     height: 100%;
     width: 100%;
-    background-image: url("../images/dressup.jpg");
+    background-image: url("../images/bedroom_pink.png");
     background-size: cover;
     background-position: center;
     transition: 300ms;
@@ -33,7 +33,11 @@ main {
     left: 50%; 
     transform: translate(-50%, -50%); 
     text-transform: uppercase;
-    color: rgb(138, 13, 51);
+    color: rgb(255, 255, 255);
+    background-color: rgb(184, 39, 83, 0.7);
+    box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.61);
+    padding: 4% 5%;
+    border-radius: 100%;
     font-family: 'Pacifico', cursive;
     text-shadow: 1px 1px 2px rgb(31, 6, 10);
 
@@ -51,6 +55,7 @@ main {
     font-family: 'Pacifico', cursive;
     transition: 100ms;
     box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.61);   
+    transform: translate(-50%, -50%);
 }
 
 .btn:hover {
@@ -79,4 +84,10 @@ ul {list-style: none;}
  }
 
 
-
+.heyy {
+    height: 1rem;
+    width: 1rem;
+    background-color: blue;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}

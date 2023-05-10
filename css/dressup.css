@@ -15,12 +15,13 @@
     flex-direction: column;
     justify-content: flex-start;
     width: 30%;
+    border-radius: 1rem;
 
 }
 
 .TypeHeadline {
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
     color: rgb(138, 13, 51);
     font-family: 'Pacifico', cursive;
@@ -101,6 +102,11 @@
 #lip-4 {
     background-color: #6e191d;
 }
+
+#lip-9 {
+    background-color: #51ff00;
+}
+
 
 
 
